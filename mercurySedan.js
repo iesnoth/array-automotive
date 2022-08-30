@@ -48,7 +48,9 @@ class Car extends VehicleModule {
         else {
             console.log(`Schedule maintenance at 30000 miles.`)
         }
+        
     }
+
 }
 
 let sedan = new Car('Sedan', 'Mercury', 2016, 'tan', 120000);
@@ -56,4 +58,5 @@ let sedan = new Car('Sedan', 'Mercury', 2016, 'tan', 120000);
 sedan.loadpassenger(5)
 sedan.scheduleMaintenance()
 sedan.start()
+sedan.accelerate()
 console.log(sedan)
