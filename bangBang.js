@@ -5,35 +5,44 @@ class Ford extends VehicleModule {
     constructor(make, model, year, color, mileage){
         super(make, model, year, color, mileage)
         this.canFly = false;
-        this.numPassengers = 
+        //this.numPassengers = numberPassengers()
         this.canFloat = false;
         this.terrain = ['air','road','off-road','water']
-        this.People = passPeople;
+        this.people = passPeople;
         return passPeople
     }
-    
+
 //count the number of people in the car
-    numberPassengers(){
-        passPeople.forEach
-    }
+    // numberPassengers(){
+    //     for(i = 0;i>this.people;i++){ 
+    //         return i
+    //     }}
 
     changeTerrain(terrain){
         if (terrain === 'air'){
             console.log('Deploy wings')
-            let this.canFly = true
+            this.canFly = true
         }
         else if (terrain === 'water'){
-            console.log('Deploy ')
+            console.log('Deploy floatation.')
         }
-    }
-
-    canDrive(this.people[x]){
-        if(this.people[x])
+        else {
+            console.log('You are driving on land.')
+        }
     }
 
 
 
 }
 
+let chittyChitty = new Ford('Ford','Zeppelin',1968,'multi',null)
 
-//return passPeople
+chittyChitty.changeTerrain('air')
+
+
+// function printArrayAndIndex(input) {
+//     input.forEach((numby, catalogue) => {
+//         console.log(`This is number: ${numby} and position ${catalogue}and is the type of ${typeof numby}`)
+//     })
+// }
+
