@@ -1,24 +1,39 @@
 const VehicleModule = require('./vehicle').Vehicle
-const cast = require('./passengerClass.js').Passenger
-
-class ChittyChitty extends VehicleModule {
+const passPeople = require('./passengerClass.js').Passenger
+// const cast = []
+class Ford extends VehicleModule {
     constructor(make, model, year, color, mileage){
         super(make, model, year, color, mileage)
         this.canFly = false;
-        this.maxPassengers = 4;
+        this.numPassengers = 
         this.canFloat = false;
-
-
+        this.terrain = ['air','road','off-road','water']
+        this.People = passPeople;
+        return passPeople
     }
+    
+//count the number of people in the car
+    numberPassengers(){
+        passPeople.forEach
+    }
+
+    changeTerrain(terrain){
+        if (terrain === 'air'){
+            console.log('Deploy wings')
+            let this.canFly = true
+        }
+        else if (terrain === 'water'){
+            console.log('Deploy ')
+        }
+    }
+
+    canDrive(this.people[x]){
+        if(this.people[x])
+    }
+
+
 
 }
 
-//Passengers of Chitty Chitty Bang Bang
-//I know there has to be a better way to push these things into an array,
-//but this is what I'm doing for now
-// let mrPotts = new PassPeople('Caractacus Potts',30, 'male')
-// let truly = new PassPeople('Truly Scrumptious',26,'female')
-// let boyPotts = new PassPeople('Jeremy Potts',10, 'male')
-// let girlPotts = new PassPeople('Jemima Potts',8,'female')
-// cast.push(mrPotts,truly,)
-// console.log(cast)
+
+//return passPeople

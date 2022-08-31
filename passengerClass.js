@@ -27,9 +27,8 @@ let boyPotts = new Passenger('Jeremy Potts',10, 'male')
 let girlPotts = new Passenger('Jemima Potts',8,'female')
 
 console.log(cast)
-truly.driveWell()
-boyPotts.driveWell()
-return cast
+// truly.driveWell()
+// boyPotts.driveWell()
 
 
 module.exports = {
