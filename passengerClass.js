@@ -21,23 +21,6 @@ class Passenger {
 }
 
 
-
-// class Driver extends Passenger{
-//     constructor(name, age, gender){
-//         super(name, age, gender)
-//         canDrive = true
-//         cast.push(this)
-//     }
-
-//     driveWell(){
-//         if(this.gender === 'male'){
-//             console.log(`${this.name} can drive well, but is it worth it?`)
-//         }
-//         else{
-//             console.log(`${this.name} can't drive well for the sake of comedy.`)
-//         }}
-// }
-
 let mrPotts = new Passenger('Caractacus Potts',30, 'male')
 let truly = new Passenger('Truly Scrumptious',26,'female')
 let boyPotts = new Passenger('Jeremy Potts',10, 'male')
@@ -46,7 +29,7 @@ let girlPotts = new Passenger('Jemima Potts',8,'female')
 console.log(cast)
 truly.driveWell()
 boyPotts.driveWell()
-
+return cast
 
 
 module.exports = {
